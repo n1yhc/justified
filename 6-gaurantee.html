@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+  <title>Justified - 쇼핑</title>
+  <link rel="stylesheet" href="css/6-gaurantee.css">
+  <script src="js/6-gaurantee.js" defer></script>
+</head>
+<body>
+    <div class="topline-wrapper">
+        <img src="https://n1yhc.github.io/justified/images/topline.png" alt="Top Line" class="topline">
+        <div class="scroll-text">
+          <span>ALL RIGHTS NOW ON SALE • ALL RIGHTS NOW ON SALE • ALL RIGHTS NOW ON SALE •  </span>
+          <span>ALL RIGHTS NOW ON SALE • ALL RIGHTS NOW ON SALE • ALL RIGHTS NOW ON SALE •  </span>
+        </div>
+      </div>
+      <div class="category-buttons">
+        <a href="1-about.html"><img src="https://n1yhc.github.io/justified/images/about.png" alt="About" class="category-btn"></a>
+        <a href="2-college.html"><img src="https://n1yhc.github.io/justified/images/college.png" alt="College" class="category-btn"></a>
+        <a href="3-subway.html"><img src="https://n1yhc.github.io/justified/images/subway.png" alt="Subway" class="category-btn"></a>
+        <a href="4-office.html"><img src="https://n1yhc.github.io/justified/images/office.png" alt="Office" class="category-btn"></a>
+        <a href="5-hospital.html"><img src="https://n1yhc.github.io/justified/images/hospital.png" alt="Hospital" class="category-btn"></a>
+        <a href="6-gaurantee.html"><img src="https://n1yhc.github.io/justified/images/gaurantee.png" alt="Gaurantee" class="category-btn"></a>
+        <a href="7-policies.html"><img src="https://n1yhc.github.io/justified/images/policies.png" alt="Policies" class="category-btn"></a>
+      </div>
+      <div class="category-text">
+        <p>Justified @ 2025</p>
+        <p>Contact</p>
+        <p>Terms and Conditions</p>
+        <p>Privacy Policy</p>
+      </div>
+           
+    <div class="container">
+        <img src="https://n1yhc.github.io/justified/images/logo.png" alt="Justified Logo" class="logo" onclick="location.href='0-login.html'">
+      </div>
+      <img src="https://n1yhc.github.io/justified/images/midline.png" alt="Mid Line" class="midline">
+      <img src="https://n1yhc.github.io/justified/images/adds.png" alt="Adds" class="adds">
+      <img src="https://n1yhc.github.io/justified/images/news.png" alt="News" class="news">
+      <img src="https://n1yhc.github.io/justified/images/news.png" alt="News" class="news">
+      <img src="https://n1yhc.github.io/justified/images/guaranteeofrights.png" alt="Info" class="info">
+      <!-- ✅ 좌측 하단 구매내역 창 -->
+<div id="purchase-history"></div>
+      <!-- ✅ 우측 하단 캐시 창 -->
+      <div class="cash-display">
+        <img src="https://n1yhc.github.io/justified/images/cash.png" alt="Cash Icon" class="cash-background">
+        <div class="cash-text">
+          <p id="nickname"></p>  <!-- ✅ 닉네임 -->
+          <p><span id="cash">0</span>R</p>  <!-- ✅ 캐시 잔액 -->
+        </div>
+      </div>
+      
+
+
+  <script>
+    window.onload = function() {
+      const birth = localStorage.getItem('birth');
+      let sum = 0;
+      for (let i = 0; i < birth.length; i++) {
+        sum += parseInt(birth.charAt(i));
+      }
+      const cash = sum * 10;
+      localStorage.setItem('cash', cash);
+      document.getElementById('cash').innerText = cash;
+    }
+
+    function showPopup(productNumber) {
+      selectedProduct = productNumber;
+      document.getElementById('popup-description').innerText = `${productNumber}번 상품 상세설명입니다.`;
+      document.getElementById('popup').style.display = 'block';
+    }
+
+    function closePopup() {
+      document.getElementById('popup').style.display = 'none';
+    }
+
+    function purchase() {
+      let cash = parseInt(localStorage.getItem('cash'));
+      if (cash >= 10) {
+        cash -= 10;
+        localStorage.setItem('cash', cash);
+        document.getElementById('cash').innerText = cash;
+        alert(`${selectedProduct}번 상품을 구매했습니다!`);
+      } else {
+        alert('캐시가 부족합니다!');
+      }
+      closePopup();
+    }
+  </script>
+</body>
+</html>

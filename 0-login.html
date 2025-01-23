@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Justified - 로그인</title>
+  <link rel="stylesheet" href="css/0-login.css">
+  <script src="js/0-login.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <img src="https://n1yhc.github.io/justified/images/logo.png" alt="Justified Logo" class="logo">
+    <p>닉네임과 생년월일을 입력해주세요. </p>
+    <input type="text" id="nickname" placeholder="닉네임">
+    <input type="text" id="birth" placeholder="생년월일 (YYMMDD)">
+    <img src="https://n1yhc.github.io/justified/images/goshopping.png" alt="Go Shopping" class="go-shopping" onclick="login()">
+  </div>
+
+  <script>
+    function login() {
+      const nickname = document.getElementById('nickname').value;
+      const birth = document.getElementById('birth').value;
+      
+      if (nickname === '' || birth === '' || birth.length !== 6 || isNaN(birth)) {
+        alert('닉네임과 생년월일(YYMMDD)을 정확히 입력해주세요.');
+        return;
+      }
+      
+      localStorage.setItem('nickname', nickname);
+      localStorage.setItem('birth', birth);
+      window.location.href = 'shop.html';
+    }
+  </script>
+</body>
+</html>

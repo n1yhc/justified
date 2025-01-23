@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+  <title>Justified - 쇼핑</title>
+  <link rel="stylesheet" href="css/3-subway.css">
+  <script src="js/3-subway.js" defer></script>
+</head>
+<body>
+    <div class="topline-wrapper">
+        <img src="images/topline.png" alt="Top Line" class="topline">
+        <div class="scroll-text">
+          <span>ALL RIGHTS NOW ON SALE • ALL RIGHTS NOW ON SALE • ALL RIGHTS NOW ON SALE •  </span>
+          <span>ALL RIGHTS NOW ON SALE • ALL RIGHTS NOW ON SALE • ALL RIGHTS NOW ON SALE •  </span>
+        </div>
+      </div>
+      <div class="category-buttons">
+        <a href="1-about.html"><img src="images/about.png" alt="About" class="category-btn"></a>
+        <a href="2-college.html"><img src="images/college.png" alt="College" class="category-btn"></a>
+        <a href="3-subway.html"><img src="images/subway.png" alt="Subway" class="category-btn"></a>
+        <a href="4-office.html"><img src="images/office.png" alt="Office" class="category-btn"></a>
+        <a href="5-hospital.html"><img src="images/hospital.png" alt="Hospital" class="category-btn"></a>
+        <a href="6-gaurantee.html"><img src="images/gaurantee.png" alt="Gaurantee" class="category-btn"></a>
+        <a href="7-policies.html"><img src="images/policies.png" alt="Policies" class="category-btn"></a>
+      </div>
+      <div class="category-text">
+        <p>Justified @ 2025</p>
+        <p>Contact</p>
+        <p>Terms and Conditions</p>
+        <p>Privacy Policy</p>
+      </div>
+           
+    <div class="container">
+        <img src="images/logo.png" alt="Justified Logo" class="logo" onclick="location.href='0-login.html'">
+      </div>
+      <img src="images/midline.png" alt="Mid Line" class="midline">
+      <img src="images/adds.png" alt="Adds" class="adds">
+      <img src="images/news.png" alt="News" class="news">
+      <img src="images/news.png" alt="News" class="news">
+      <!-- ✅ 좌측 하단 구매내역 창 -->
+<div id="purchase-history"></div>
+      <!-- ✅ 우측 하단 캐시 창 -->
+      <div class="cash-display">
+        <img src="images/cash.png" alt="Cash Icon" class="cash-background">
+        <div class="cash-text">
+          <p id="nickname"></p>  <!-- ✅ 닉네임 -->
+          <p><span id="cash">0</span>R</p>  <!-- ✅ 캐시 잔액 -->
+        </div>
+      </div>
+      
+      
+            
+
+  <div class="products">
+    <div class="product" onclick="showPopup(1, '무임승차권')">
+      <img src="images/s대지 16@6x.png" alt="c2">
+      <p> 무임승차권</p>
+      <p>5R</p>
+    </div>
+    <div class="product" onclick="showPopup(2, '칸 이동권')">
+        <img src="images/s대지 17@6x.png" alt="c3">
+        <p> 칸 이동권</p>
+        <p>5R</p>
+      </div>
+      <div class="product" onclick="showPopup(3, '역무원 호출권')">
+        <img src="images/s대지 18@6x.png" alt="c4">
+        <p> 역무원 호출권</p>
+        <p>5R</p>
+      </div>
+      <div class="product" onclick="showPopup(4, '좌석변경권')">
+        <img src="images/s대지 19@6x.png" alt="c5">
+        <p> 좌석변경권</p>
+        <p>30R</p>
+      </div>
+      <div class="product" onclick="showPopup(5, '우선탑승권')">
+        <img src="images/s대지 20@6x.png" alt="c6">
+        <p> 우선탑승권</p>
+        <p>50R</p>
+      </div>
+      <div class="product" onclick="showPopup(6, '열차좌석 보장권')">
+        <img src="images/s대지 21@6x.png" alt="c7">
+        <p> 열차좌석 보장권</p>
+        <p>20R</p>
+      </div>
+    <div class="product" onclick="showPopup(7, '열차좌석 방어')">
+      <img src="images/s대지 22@6x.png" alt="c7">
+      <p> 열차좌석 방어권</p>
+      <p>20R</p>
+    </div>
+    <div class="product" onclick="showPopup(8, '엘리베이터 이용권')">
+      <img src="images/s대지 23@6x.png" alt="c7">
+      <p> 엘리베이터 이용권</p>
+      <p>5R</p>
+    </div>
+    <div class="product" onclick="showPopup(9, '정차1회패스권')">
+      <img src="images/s대지 24@6x.png" alt="c7">
+      <p> 정차1회패스권</p>
+      <p>300R</p>
+    </div>
+    <div class="product" onclick="showPopup(10, '대기줄 삭제권')">
+      <img src="images/s대지 25@6x.png" alt="c7">
+      <p> 대기줄 삭제권</p>
+      <p>100R</p>
+    </div>
+  <div class="product" onclick="showPopup(11, '열차내거리두기권')">
+    <img src="images/s대지 26@6x.png" alt="c7">
+    <p> 열차내거리두기권</p>
+    <p>75R</p>
+  </div>
+  <div class="product" onclick="showPopup(12, '열차 1칸 음소거권')">
+    <img src="images/s대지 27@6x.png" alt="c7">
+    <p> 열차 1칸 음소거권</p>
+    <p>90R</p>
+  </div>
+  </div>
+
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <p id="popup-description"></p>
+      <button onclick="purchase()">구매</button>
+      <button onclick="closePopup()">닫기</button>
+    </div>
+  </div>
+
+  <script>
+    window.onload = function() {
+      const birth = localStorage.getItem('birth');
+      let sum = 0;
+      for (let i = 0; i < birth.length; i++) {
+        sum += parseInt(birth.charAt(i));
+      }
+      const cash = sum * 10;
+      localStorage.setItem('cash', cash);
+      document.getElementById('cash').innerText = cash;
+    }
+
+    function showPopup(productNumber) {
+      selectedProduct = productNumber;
+      document.getElementById('popup-description').innerText = `${productNumber}번 상품 상세설명입니다.`;
+      document.getElementById('popup').style.display = 'block';
+    }
+
+    function closePopup() {
+      document.getElementById('popup').style.display = 'none';
+    }
+
+    function purchase() {
+      let cash = parseInt(localStorage.getItem('cash'));
+      if (cash >= 10) {
+        cash -= 10;
+        localStorage.setItem('cash', cash);
+        document.getElementById('cash').innerText = cash;
+        alert(`${selectedProduct}번 상품을 구매했습니다!`);
+      } else {
+        alert('캐시가 부족합니다!');
+      }
+      closePopup();
+    }
+  </script>
+</body>
+</html>

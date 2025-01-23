@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+  <title>Justified - 쇼핑</title>
+  <link rel="stylesheet" href="css/5-hospital.css">
+  <script src="js/5-hospital.js" defer></script>
+</head>
+<body>
+    <div class="topline-wrapper">
+        <img src="https://n1yhc.github.io/justified/images/topline.png" alt="Top Line" class="topline">
+        <div class="scroll-text">
+          <span>ALL RIGHTS NOW ON SALE • ALL RIGHTS NOW ON SALE • ALL RIGHTS NOW ON SALE •  </span>
+          <span>ALL RIGHTS NOW ON SALE • ALL RIGHTS NOW ON SALE • ALL RIGHTS NOW ON SALE •  </span>
+        </div>
+      </div>
+      <div class="category-buttons">
+        <a href="1-about.html"><img src="https://n1yhc.github.io/justified/images/about.png" alt="About" class="category-btn"></a>
+        <a href="2-college.html"><img src="https://n1yhc.github.io/justified/images/college.png" alt="College" class="category-btn"></a>
+        <a href="3-subway.html"><img src="https://n1yhc.github.io/justified/images/subway.png" alt="Subway" class="category-btn"></a>
+        <a href="4-office.html"><img src="https://n1yhc.github.io/justified/images/office.png" alt="Office" class="category-btn"></a>
+        <a href="5-hospital.html"><img src="https://n1yhc.github.io/justified/images/hospital.png" alt="Hospital" class="category-btn"></a>
+        <a href="6-gaurantee.html"><img src="https://n1yhc.github.io/justified/images/gaurantee.png" alt="Gaurantee" class="category-btn"></a>
+        <a href="7-policies.html"><img src="https://n1yhc.github.io/justified/images/policies.png" alt="Policies" class="category-btn"></a>
+      </div>
+      <div class="category-text">
+        <p>Justified @ 2025</p>
+        <p>Contact</p>
+        <p>Terms and Conditions</p>
+        <p>Privacy Policy</p>
+      </div>
+           
+    <div class="container">
+        <img src="https://n1yhc.github.io/justified/images/logo.png" alt="Justified Logo" class="logo" onclick="location.href='0-login.html'">
+      </div>
+      <img src="https://n1yhc.github.io/justified/images/midline.png" alt="Mid Line" class="midline">
+      <img src="https://n1yhc.github.io/justified/images/adds.png" alt="Adds" class="adds">
+      <img src="https://n1yhc.github.io/justified/images/news.png" alt="News" class="news">
+      <img src="https://n1yhc.github.io/justified/images/news.png" alt="News" class="news">
+      <!-- ✅ 좌측 하단 구매내역 창 -->
+<div id="purchase-history"></div>
+      <!-- ✅ 우측 하단 캐시 창 -->
+      <div class="cash-display">
+        <img src="https://n1yhc.github.io/justified/images/cash.png" alt="Cash Icon" class="cash-background">
+        <div class="cash-text">
+          <p id="nickname"></p>  <!-- ✅ 닉네임 -->
+          <p><span id="cash">0</span>R</p>  <!-- ✅ 캐시 잔액 -->
+        </div>
+      </div>
+      
+      
+            
+
+  <div class="products">
+    <div class="product" onclick="showPopup(1, '우선치료권')">
+      <img src="https://n1yhc.github.io/justified/images/h대지 40@6x.png" alt="c2">
+      <p> 우선치료권</p>
+      <p>75R</p>
+    </div>
+    <div class="product" onclick="showPopup(2, '진료중단권')">
+        <img src="https://n1yhc.github.io/justified/images/h대지 41@6x.png" alt="c3">
+        <p> 진료중단권</p>
+        <p>5R</p>
+      </div>
+      <div class="product" onclick="showPopup(3, '응급실예약권')">
+        <img src="https://n1yhc.github.io/justified/images/h대지 42@6x.png" alt="c4">
+        <p> 응급실예약권</p>
+        <p>250R</p>
+      </div>
+      <div class="product" onclick="showPopup(4, '식단변경권')">
+        <img src="https://n1yhc.github.io/justified/images/h대지 43@6x.png" alt="c5">
+        <p> 식단변경권</p>
+        <p>20R</p>
+      </div>
+      <div class="product" onclick="showPopup(5, '처방변경권')">
+        <img src="https://n1yhc.github.io/justified/images/h대지 44@6x.png" alt="c6">
+        <p> 처방변경</p>
+        <p>580R</p>
+      </div>
+      <div class="product" onclick="showPopup(6, '1인실조성권')">
+        <img src="https://n1yhc.github.io/justified/images/h대지 45@6x.png" alt="c7">
+        <p> 1인실조성권</p>
+        <p>300R</p>
+      </div>
+    <div class="product" onclick="showPopup(7, '환자거절권')">
+      <img src="https://n1yhc.github.io/justified/images/h대지 46@6x.png" alt="c7">
+      <p> 환자거절권</p>
+      <p>450R</p>
+    </div>
+    <div class="product" onclick="showPopup(8, '의사선택권')">
+      <img src="https://n1yhc.github.io/justified/images/h대지 48@6x.png" alt="c7">
+      <p> 의사선택권</p>
+      <p>10R</p>
+    </div>
+    <div class="product" onclick="showPopup(9, '강제입원권')">
+      <img src="https://n1yhc.github.io/justified/images/h대지 50@6x.png" alt="c7">
+      <p> 강제입원권</p>
+      <p>1000R</p>
+    </div>
+    <div class="product" onclick="showPopup(10, '강제퇴원권')">
+      <img src="https://n1yhc.github.io/justified/images/h대지 51@6x.png" alt="c7">
+      <p> 강제퇴원권</p>
+      <p>1000R</p>
+    </div>
+  <div class="product" onclick="showPopup(11, '거짓처방권')">
+    <img src="https://n1yhc.github.io/justified/images/h대지 53@6x.png" alt="c7">
+    <p> 거짓처방권</p>
+    <p>300R</p>
+  </div>
+  <div class="product" onclick="showPopup(12, '병문안패스권')">
+    <img src="https://n1yhc.github.io/justified/images/h대지 54@6x.png" alt="c7">
+    <p> 병문안패스권</p>
+    <p>20R</p>
+  </div>
+  </div>
+
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <p id="popup-description"></p>
+      <button onclick="purchase()">구매</button>
+      <button onclick="closePopup()">닫기</button>
+    </div>
+  </div>
+
+  <script>
+    window.onload = function() {
+      const birth = localStorage.getItem('birth');
+      let sum = 0;
+      for (let i = 0; i < birth.length; i++) {
+        sum += parseInt(birth.charAt(i));
+      }
+      const cash = sum * 10;
+      localStorage.setItem('cash', cash);
+      document.getElementById('cash').innerText = cash;
+    }
+
+    function showPopup(productNumber) {
+      selectedProduct = productNumber;
+      document.getElementById('popup-description').innerText = `${productNumber}번 상품 상세설명입니다.`;
+      document.getElementById('popup').style.display = 'block';
+    }
+
+    function closePopup() {
+      document.getElementById('popup').style.display = 'none';
+    }
+
+    function purchase() {
+      let cash = parseInt(localStorage.getItem('cash'));
+      if (cash >= 10) {
+        cash -= 10;
+        localStorage.setItem('cash', cash);
+        document.getElementById('cash').innerText = cash;
+        alert(`${selectedProduct}번 상품을 구매했습니다!`);
+      } else {
+        alert('캐시가 부족합니다!');
+      }
+      closePopup();
+    }
+  </script>
+</body>
+</html>

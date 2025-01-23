@@ -1,0 +1,52 @@
+/* 전체 레이아웃 */
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #f4d722, #f9f0b5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+ /* 로그인 박스 */
+.container {
+    text-align: center;
+    display: flex;         /* ✅ Flexbox 적용 */
+    flex-direction: column; /* ✅ 세로 정렬 */
+    align-items: center;    /* ✅ 가운데 정렬 */
+  }
+  
+  .logo {
+    width: 400px;
+    margin-top:  -200px;
+  }
+
+  .container p {
+    margin-top: 40px; /* ✅ 텍스트를 아래로 10px 이동 */
+    margin-bottom: 30px;
+  }  
+
+  .container {
+    text-align: center;
+    display: flex;         /* ✅ Flexbox 적용 */
+    flex-direction: column; /* ✅ 세로 정렬 */
+    align-items: center;    /* ✅ 가운데 정렬 */
+  }
+  
+  input {
+    width: 200px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .go-shopping {
+    width: 350px;
+    cursor: pointer;
+    margin-top: 40px;
+  }
+  
